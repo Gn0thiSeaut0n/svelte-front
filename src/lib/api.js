@@ -15,10 +15,10 @@ const send = async({ method, path, data }) => {
 	let result = await res.text();
 	result = result ? JSON.parse(result) : {};
 
-	if (res.ok) 
-		return result;
+	// if (res.ok) 
+	return result;
 
-	throw error(res.status, result);
+	// throw error(res.status, result);
 }
 
 export const get = path => {
