@@ -16,6 +16,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@supabase/supabase-js": "^2.10.0",
 		"sveltestrap": "^5.10.0"
 	}
 }

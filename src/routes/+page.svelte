@@ -3,12 +3,12 @@
 	
 	const color = 'primary';
 
-	export let form;
-
 	const arr = [];
 
-	if(form && form.body.errors) {
-		form.body.errors.forEach(obj => {
+	export let data;
+
+	if(data.user && data.user.errors) {
+		data.user.errors.forEach(obj => {
 			arr.push(obj.field);
 		});
 	}
@@ -23,7 +23,7 @@
 			<Input class="{arr.includes('id') === true ? 'errors' : ''}" placeholder="값을 입력해주세요." name="id" type="text"/>
 		</FormGroup>
 		<FormGroup floating label="비밀번호">
-			<Input class="{arr.includes('pw') === true ? 'errors' : ''}"  placeholder="값을 입력해주세요." name="pw" type="password"/>
+			<Input class="{arr.includes('pw') === true ? 'errors' : ''}" placeholder="값을 입력해주세요." name="pw" type="password"/>
 		</FormGroup>
 		<Button block {color}>로그인</Button>
 	</Form>
