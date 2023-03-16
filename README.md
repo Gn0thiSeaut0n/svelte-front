@@ -1,3 +1,3 @@
 ##svelte-front
 
-svelte 연습을 위한 백엔드 소스
+svelte 연습을 위한 프론트 소스
